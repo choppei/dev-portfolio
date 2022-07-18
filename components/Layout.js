@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
+import Header from '../components/Header';
 
 
 const Layout = ({ title, description, children }) => {
@@ -14,8 +15,13 @@ const Layout = ({ title, description, children }) => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <div className="min-h-screen bg-green-400">{children}</div>
-          
+            <div className="relative z-10 px-3 overflow-hidden min-h-screen bg-primary-light antialiased font-montserrat">
+                <div className='w-full- h-full'>
+                    <Header />
+                    {children}
+                </div>
+            </div>
+
         </>
     );
 };

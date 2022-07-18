@@ -9,11 +9,6 @@ export default function Home() {
       </main>
 
     </Layout>
-   
-      
-
-      
-          
-   
+     
   );
 }
