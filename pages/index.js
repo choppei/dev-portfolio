@@ -18,8 +18,19 @@ export default function Home() {
         dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
       />
 
-      <main>
-        <h1 className="text-green-500">hello</h1>
+      <main className='w-full h-full'>
+        <section className='h-full max-w-5xl mx-auto pt-16 md:pt-8'>
+          <div className='flex flex-col items-center justify-center md:items-start'>
+            <h4 className='text-lg text-gray-800 dark:text-white'>
+              <span className='text-xl font-normal'>Hello,</span> I'm
+            </h4>
+            <h1 className='mt-5 text-xl font-extrabold tracking-normal text-gray-800 uppercase md:text-4xl md:mt-3 dark:text-white'>
+              Berk Küçükoğlu
+            </h1>
+          </div>
+
+
+        </section>
       </main>
 
     </Layout>
